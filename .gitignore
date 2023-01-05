@@ -1,3 +1,5 @@
-automato.o
-main.o
-exe
+# ignore all files .o
+*.o
+
+# ignore the exe file
+.exe
