@@ -39,89 +39,6 @@ void lerMatriz(int **matriz, int tamMatriz)
 
 void operacao(int **matriz, int tamMatriz)
 {
-/*    
-    for (int i = 0; i < tamMatriz; i++)
-        for (int j = 0; j < tamMatriz; j++)
-            if (matriz[i][j]) {
-                int cont = 0;
-                if(!i) {
-                    if(!j) {
-                        if (matriz[i][j + 1])
-                            cont++;
-                        if (matriz[i + 1][j])
-                            cont++;
-                        if (matriz[i + 1][j + 1])
-                            cont++;
-                    } else if(j == tamMatriz - 1) {
-                        if (matriz[i][j - 1])
-                            cont++;
-                        if (matriz[i + 1][j - 1])
-                            cont++;
-                        if (matriz[i + 1][j])
-                            cont++;
-                    } else {
-                        if (matriz[i][j - 1])
-                            cont++;
-                        if (matriz[i][j + 1])
-                            cont++;
-                        if (matriz[i + 1][j - 1])
-                            cont++;
-                        if (matriz[i + 1][j])
-                            cont++;
-                        if (matriz[i + 1][j + 1])
-                            cont++;
-                    }
-                } else if(i == tamMatriz - 1) {
-                    if(!j) {
-                        if (matriz[i][j + 1])
-                            cont++;
-                        if (matriz[i - 1][j])
-                            cont++;
-                        if (matriz[i - 1][j + 1])
-                            cont++;
-                    } else if(j == tamMatriz - 1) {
-                        if (matriz[i][j - 1])
-                            cont++;
-                        if (matriz[i - 1][j - 1])
-                            cont++;
-                        if (matriz[i - 1][j])
-                            cont++;
-                    } else {
-                        if (matriz[i - 1][j - 1])
-                            cont++;
-                        if (matriz[i - 1][j])
-                            cont++;
-                        if (matriz[i - 1][j + 1])
-                            cont++;
-                        if (matriz[i][j - 1])
-                            cont++;
-                        if (matriz[i][j + 1])
-                            cont++;
-                    }
-                } else {
-                    if (matriz[i - 1][j - 1])
-                        cont++;
-                    if (matriz[i - 1][j])
-                        cont++;
-                    if (matriz[i - 1][j + 1])
-                        cont++;
-                    if (matriz[i][j - 1])
-                        cont++;
-                    if (matriz[i][j + 1])
-                        cont++;
-                    if (matriz[i + 1][j - 1])
-                        cont++;
-                    if (matriz[i + 1][j])
-                        cont++;
-                    if (matriz[i + 1][j + 1])
-                        cont++;
-                }
-
-                if (cont != 2 && cont != 3)
-                    matriz[i][j] = -1;
-            }
-*/    
-// /*    
     for (int i = 0; i < tamMatriz; i++)
         for (int j = 0; j < tamMatriz; j++)
             if (matriz[i][j])
@@ -149,7 +66,6 @@ void operacao(int **matriz, int tamMatriz)
                     matriz[i][j] = -1;
             }
 
-// */
     for (int i = 0; i < tamMatriz; i++)
         for (int j = 0; j < tamMatriz; j++)
             if (matriz[i][j] == 0)
