@@ -7,8 +7,8 @@ int main()
     int **M;
     int dimensao;
     
-    double tempo_gasto = 0.0;
-    clock_t inicio = clock();
+    // double tempo_gasto = 0.0;
+    // clock_t inicio = clock();
 
     lerDimensao(&dimensao);
     M = alocaMatriz(dimensao);
@@ -19,10 +19,10 @@ int main()
 
     desalocaMatriz(&M, dimensao);
 
-    clock_t fim = clock();
-    tempo_gasto += (double)(fim - inicio) / CLOCKS_PER_SEC;
+    // clock_t fim = clock();
+    // tempo_gasto += (double)(fim - inicio) / CLOCKS_PER_SEC;
 
-    printf("Tempo de execução: %f segundos\n", tempo_gasto);
+    // printf("Tempo de execução: %f segundos\n", tempo_gasto);
 
     return 0;
 }
